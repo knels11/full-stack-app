@@ -1,0 +1,51 @@
+<section>
+  <h2>Add New Pet</h2>
+
+  <form class="new-pet-form">
+    <div>
+      <label for="pet-name">Pet Name</label>
+      <input type="text" id="pet-name" name="pet-name" />
+    </div>
+    <div>
+      <label for="pet-age">Pet Age</label>
+      <input type="text" id="pet-age" name="pet-age" />
+    </div>
+    <div>
+      <label for="pet-type">Pet Type</label>
+      <input type="text" id="pet-type" name="pet-type" />
+    </div>
+    <div>
+      <label for="pet-health">Pet Health</label>
+      <input type="text" id="pet-health" name="pet-health" />
+    </div>
+    <button type="submit" class="btn">Create</button>
+  </form>
+
+<ol class="pets-list">
+  {{#each pets as |pet|}}
+  <li>
+    {{> pet-info pet }}
+  </li>
+  {{/each}}
+</ol>
+
+
+</section>
+
+{{!-- {{#if pets.length}}
+<section>
+  <h2>Your Pets</h2>
+  <ol>
+    {{#each pets as |pets|}}
+    <li>
+      {{> pet-info pet}}
+      <a href="/dashboard/edit/{{pet.id}}" class="edit-link">Edit pet</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}} --}}
+
+
+
+<script src="/javascript/add-pet.js"></script>
