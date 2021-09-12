@@ -5,26 +5,27 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // Instialize Health model (table) by extending off Sequelize's Model class
-class Pet extends Model {  static upvote(body, models) {
-  return models.Vote.create({
-    user_id: body.user_id,
-    pet_id: body.pet_id,
-  }).then(() => {
-    return Pet.findOne({
-      where: {
-        id: body.pet_id,
-      },
-      attributes: ["pet_name"],
-      include: [
-           {
-            model: models.User,
-            attributes: ["username"],
-          },
-       
-      ],
-    });
-  });
-} 
+class Pet extends Model {
+  static upvote(body, models) {
+    // return models.Vote.create({
+    //   user_id: body.user_id,
+    //   pet_id: body.pet_id,
+    // }).then(() => {
+    //   return Pet.findOne({
+    //     where: {
+    //       id: body.pet_id,
+    //     },
+    //     attributes: ["pet_name"],
+    //     include: [
+    //          {
+    //           model: models.User,
+    //           attributes: ["username"],
+    //         },
+
+    //     ],
+    //   });
+    // });
+  }
 }
 
 // set up fields and rules for Health model
