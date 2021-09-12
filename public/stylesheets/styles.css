@@ -1,0 +1,39 @@
+* {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 2px;
+    background-color:lightblue;
+}
+#header-background {
+    background:('./css/animals.png');
+}
+form label {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight:bolder;
+}
+.btn button {
+    border-radius: 15%;
+    background-color:peachpuff;
+    border:darkgoldenrod;
+    font-size: 100px;
+}
+.pets-list ol {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2.5px solid 
+}
+input {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    height: 20px;
+    width:85px;
+    margin:0;
+    padding: 1px; 
+}
