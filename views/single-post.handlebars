@@ -1,0 +1,37 @@
+<section>
+<!-- <h2> My Pets </h2> -->
+<table id="my-pets" class="pets-table">
+    <thead> My Pets </thead>
+    <tr id="my-pets-list">
+        <th value="pet1"> </th>
+        <th value="pet2"> </th>
+        <th value="pet3"> </th>
+        <th value="pet4"> </th>
+        <th value="pet5"> </th>
+        <th value="pet6"> </th>
+        <th value="pet7"> </th>
+        <th value="pet8"> </th>
+    </tr>
+</table>
+
+<!--My Pets Information Form-->
+<form id="my-pets-info" class="pets-notes"> 
+    <label for="pnotes"> My Pets Notes: At-Home Check-Up </label><br>
+<!--Notes Section for Date, Text Input Notes, Daily Check Off, & Submission BTN-->
+    <label for="todaysDate"> Date: </label>
+    <input type="date" id="current-date" name="date">
+<!--Any Notes User wants to include-->
+    <input type="text" id="pnotes" name="pnotes"><br>
+    
+<!--Checkbox to update status of pets-->
+    <input type="checkbox" id="my-pets">
+    <label for="pet-health"> Good Health </label>
+    <label for="pet-weight"> Healthy Weight </label>
+    <label for="appt"> Needs to see Vet </label>
+    <label for="grooming"> Needs Grooming </label><br>
+
+<!--When user submits pets notes form sends to backend as user post-->
+    <input type="submit" id="submit-btn">
+</form>
+
+</section>
