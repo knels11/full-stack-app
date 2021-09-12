@@ -12,6 +12,10 @@ async function logout() {
 }
 
 
+// var test = function () {
+//     console.log('button is working');
+// }
+
 
 document.querySelector('#logout').addEventListener('click', logout);
 
