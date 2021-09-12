@@ -27,7 +27,7 @@ form label {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2.5px solid 
+    border: 2.5px solid darkgray;
 }
 input {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
